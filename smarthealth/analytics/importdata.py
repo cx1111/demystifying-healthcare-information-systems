@@ -33,13 +33,17 @@ medications = ['patient_id', 'datetime', 'drug']
 for i in range(len(df_patients)):
     Patient.objects.create(
         patient_id=df_patients.loc[i, 'patient_id'],
-        dob=parse_datetime(df_patients.loc[i, 'dob']),
+        dob=df_patients.loc[i, 'dob'],
         gender=df_patients.loc[i, 'gender'],
         race=df_patients.loc[i, 'race'],
         postal_code=df_patients.loc[i, 'postal_code'],
         occupation=df_patients.loc[i, 'occupation']
     )
 
-
-x = datetime.datetime(1963, 1, 1, 1, 0)
-
+for i in range(len(df_admissions)):
+    Admission.objects.create(
+        patient_id=df_admissions.loc[i, 'patient_id'],
+        hadm_id=df_admissions.loc[i, 'hadm_id'],
+        intime=df_admissions.loc[i, 'intime'],
+        outtime=df_admissions.loc[i, 'outtime'],
+    )

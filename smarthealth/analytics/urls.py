@@ -4,6 +4,6 @@ from . import views
 
 
 urlpatterns = [
-    path('analyze-patient/<patient_id>/', views.analyze_patient)
-
+    path('analyze-patient/', views.analyze_new_patient,
+        name='analyze_new_patient')
 ]

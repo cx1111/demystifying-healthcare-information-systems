@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+  <h1>Predict readmission of Carotid Endartorectomy Patient</h1>
+  <hr>
+  {% if prediction > -1 %}
+    The machine learning model says that the patient will {% if prediction == 0 %}not {% endif %} be readmitted
+  <hr>
+  {% endif %}
+  <form method="POST">
+    {% include "inline_form_snippet.html" %}
+    <button class="btn btn-primary" type="submit">Submit</button>
+  </form>
+  <br><br>
+</div>
+{% endblock %}

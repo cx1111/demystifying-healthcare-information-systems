@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}
+Smart Health
+{% endblock %}
+
+
+{% block local_css %}
+<link rel="stylesheet" type="text/css" href="{% static 'custom/css/home.css' %}"/>
+{% endblock %}
+
+
+{% block content %}
+  <div class="container">
+
+    <header class="masthead">
+      <div class="container">
+        <div class="intro-text">
+          <div class="intro-heading">Smart Health</div>
+          <div class="intro-lead-in">Intelligent Data Analytics</div>
+          <a class="btn btn-pn btn-light badge-pill intro-badge" href="{% url 'analyze_new_patient' %}">&nbsp; Predict Patient Outcome&nbsp;</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="row">
+      {# Left column #}
+      <div class="col-md-7">
+        <h1>Algorithms</h1>
+        <hr>
+        Prediction of 30 day readmission after carotid endartorectomy.
+      </div>
+
+      <!--Right Column -->
+      <div class="col-md-5">
+        <div class="card my-4">
+          <h2 class="card-header">News</a></h2>
+          <div class="card-body">
+            We are currently working to build even more algorithms.
+          </div>
+        </div>
+      </div>
+      <!-- /.column -->
+    </div>
+    <!-- /.row -->
+  </div>
+  <!-- /.container -->
+{% endblock %}
