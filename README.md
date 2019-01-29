@@ -1,7 +1,10 @@
-# Demystifying Healthcare Information Systems - Hackaoteatora Workshop January 2019
+# Demystifying Healthcare Information Systems
+
+Workshop for Hackaoteatora January 2019
 
 Slides: https://drive.google.com/open?id=1gVqWPWUhkNXuC67fte_Ab2rZCyQ21z_91oBLzD8-248
 
+Event website: http://hackaotearoa.co.nz/
 
 ## Workshop Abstract
 
